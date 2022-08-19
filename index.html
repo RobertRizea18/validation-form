@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <style>
+        #usernameError,
+        #passwordError,
+        #passwordRepeatError,
+        #emailError,
+        #postalCodeError,
+        #text-succes {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-4 bg-light">
+        <h2 class="text-success" id="text-succes">all good</h2>
+        <h1>Register here</h1>
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" />
+                <p id="usernameError" class="text-danger">Username incorect</p>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" />
+                <p id="passwordError" class="text-danger">Parola Incorecta</p>
+            </div>
+            <div class="mb-3">
+                <label for="repeat-password" class="form-label">Repeat Password</label>
+                <input type="password" class="form-control" id="repeat-password" />
+                <p id="passwordRepeatError" class="text-danger">
+                    Parolele nu se aseamana
+                </p>
+            </div>
+            <div class="mb-3">
+                <label for="e-mail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="e-mail" />
+                <p id="emailError" class="text-danger">Email Gresit</p>
+            </div>
+            <div class="mb-3">
+                <label for="postal-code" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="postal-code" />
+                <p id="postalCodeError" class="text-danger">Cod postal gresit</p>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
